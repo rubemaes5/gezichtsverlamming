@@ -12,7 +12,15 @@ label p {
     overflow-y: hidden;
     height: 30%;
 }
-
+.header a{
+    text-decoration: none;
+    color:white;
+}
+.copy{
+    font-size: 0.7em;
+    color: white;
+    margin-bottom: 15px;
+}
 input[type="checkbox"] {
     position: absolute;
     visibility: hidden;
@@ -26,7 +34,9 @@ label {
     padding: 3%;
     text-align: center
 }
-
+.bronnen p{
+    padding: 25px;
+}
 label img {
     width: 80%;
     position: absolute;
@@ -72,7 +82,7 @@ label {
     float: right;
     width: 250px;
     padding-right: 15px;
-    margin-top: -30px
+    margin-top: -58px
 }
 
 label img {

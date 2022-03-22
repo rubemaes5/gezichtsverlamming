@@ -1,289 +1,291 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="description" content="tekst" />
-    <title>Anatomie van het gezicht</title>
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="icon" href="favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="tekst" />
+        <title>Anatomie van het gezicht</title>
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="icon" href="Favicoon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-</head>
+    </head>
 
-<body>
-    <div class="header">
-        <img src="images/artevelde.png">
-    </div>
-    <div class="sechead">
-        <button onclick="shownavigation()" class="shownav">Selecteer een spier</button>
-        <button onclick="showimage()" class="showim">bekijk afbeelding</button>
-        <button onclick="toggleoff(this)" class="deskonly">Deselecteer alles</button>
-        <button onclick="shownerve()" class="deskonly">Zenuwen aan/uit</button>
-        <a href="files/anatomiegezicht.pdf" download="Anatomiegezicht.pdf" class="download">PDF downloaden</a>
-    </div>
-    <div class="wrapper">
-
-        <input type="checkbox" id="orbicularisoculi" value="orbicularisoculi">
-        <label class="fig" for="orbicularisoculi">
-            <img src="images/Versie_6.png">
-            <img src="images/orbicularisoculi.png">
-            <p>M.&nbsp;Orbicularis Oculi</p>
-        </label>
-
-        <input type="checkbox" id="corrugator" value="corrugator">
-        <label class="fig" for="corrugator">
-            <img src="images/Versie_6.png">
-            <img src="images/corrugatorsuper.png">
-            <p>M.&nbsp;Corrugator Supercillii</p>
-        </label>
-
-        <input type="checkbox" id="nasalistransvera" value="nasalistransvera">
-        <label class="fig" for="nasalistransvera">
-            <img src="images/Versie_6.png">
-            <img src="images/nasalistransversa.png">
-            <p>M.&nbsp;Nasalis&nbsp;Pars Transversa</p>
-        </label>
-
-        <input type="checkbox" id="nasalisalaris" value="nasalisalaris">
-        <label class="fig" for="nasalisalaris">
-            <img src="images/Versie_6.png">
-            <img src="images/nasalisalaris.png">
-            <p>M.&nbsp;Nasalis&nbsp;Pars Alaris</p>
-        </label>
-
-        <input type="checkbox" id="procerus" value="procerus">
-        <label class="fig" for="procerus">
-            <img src="images/Versie_6.png">
-            <img src="images/procerus.png">
-            <p>M.&nbsp;Procerus</p>
-        </label>
-
-        <input type="checkbox" id="depresooranguli" value="depresooranguli">
-        <label class="fig" for="depresooranguli">
-            <img src="images/Versie_6.png">
-            <img src="images/depressoranguli.png">
-            <p>M.&nbsp;Depressor&nbsp;Anguli Oris</p>
-        </label>
-
-        <input type="checkbox" id="depressorlabii" value="depressorlabii">
-        <label class="fig" for="depressorlabii">
-            <img src="images/Versie_6.png">
-            <img src="images/depressorlabii.png">
-            <p>M.&nbsp;Depressor&nbsp;Labii Inferioris</p>
-        </label>
-
-        <input type="checkbox" id="mentalis" value="mentalis">
-        <label class="fig" for="mentalis">
-            <img src="images/Versie_6.png">
-            <img src="images/mentalis.png">
-            <p>M.&nbsp;Mentalis</p>
-        </label>
-
-        <input type="checkbox" id="risorius" value="risorius">
-        <label class="fig" for="risorius">
-            <img src="images/Versie_6.png">
-            <img src="images/risorius.png">
-            <p>M.&nbsp;Risorius</p>
-        </label>
-
-        <input type="checkbox" id="zygomalicusmajor" value="zygomalicusmajor">
-        <label class="fig" for="zygomalicusmajor">
-            <img src="images/Versie_6.png">
-            <img src="images/zygomalicusmajor.png">
-            <p>M.&nbsp;Zygomaticus Major</p>
-        </label>
-
-        <input type="checkbox" id="zygomalicusminor" value="zygomalicusminor">
-        <label class="fig" for="zygomalicusminor">
-            <img src="images/Versie_6.png">
-            <img src="images/zygomalicus.png">
-            <p>M.&nbsp;Zygomaticus Minor</p>
-        </label>
-
-        <input type="checkbox" id="levatorlabiisup" value="levatorlabiisup">
-        <label class="fig" for="levatorlabiisup">
-            <img src="images/Versie_6.png">
-            <img src="images/levatorlabiisup.png">
-            <p>M.&nbsp;Levator&nbsp;Labii Superioris</p>
-        </label>
-
-
-        <input type="checkbox" id="levatorlabiialae" value="levatorlabiialae">
-        <label class="fig" for="levatorlabiialae">
-            <img src="images/Versie_6.png">
-            <img src="images/levatorlabiialae.png">
-            <p>M.&nbsp;Levator&nbsp;Labii Alaeque</p>
-        </label>
-
-        <input type="checkbox" id="levatoranguli" value="levatoranguli">
-        <label class="fig" for="levatoranguli">
-            <img src="images/Versie_6.png">
-            <img src="images/levatorangulioris.png">
-            <p>M.&nbsp;Levator&nbsp;Anguli Oris</p>
-        </label>
-
-        <input type="checkbox" id="orbicularisoris" value="orbicularisoris">
-        <label class="fig" for="orbicularisoris">
-            <img src="images/Versie_6.png">
-            <img src="images/orbicularesoris.png">
-            <p>M.&nbsp;Orbicularis Oris</p>
-        </label>
-
-        <input type="checkbox" id="buccinator" value="buccinator">
-        <label class="fig" for="buccinator">
-            <img src="images/Versie_6.png">
-            <img src="images/buccinator.png">
-            <p>M.&nbsp;Buccinator</p>
-        </label>
-
-        <input type="checkbox" id="frontalis" value="frontalis">
-        <label class="fig" for="frontalis">
-            <img src="images/Versie_6.png">
-            <img src="images/frontalis.png">
-            <p>M.&nbsp;Frontalis</p>
-        </label>
-
-        <input type="checkbox" id="platysma2" value="platysma2">
-        <label class="fig" for="platysma2">
-            <img src="images/Versie_6.png">
-            <img src="images/platysma2.png">
-            <p>M.&nbsp;Platysma</p>
-        </label>
-
-    
-
-        <div id="middle" class="clearfix">
-            <figure>
-                <img class="im1" src="images/Versie_6.png">
-                <img class="im2" src="images/buccinator.png">
-                <img class="im3" src="images/levatorangulioris.png">
-                <img class="im4" src="images/zygomalicus.png">
-                <img class="im5" src="images/zygomalicusmajor.png">
-                <img class="im7" src="images/platysma2.png">
-                <img class="im8" src="images/risorius.png">
-                <img class="im9" src="images/nasalistransversa.png">
-                <img class="im10" src="images/nasalisalaris.png">
-                <img class="im11" src="images/frontalis.png">
-                <img class="im12" src="images/mentalis.png">
-                <img class="im13" src="images/depressorlabii.png">
-                <img class="im14" src="images/depressoranguli.png">
-                <img class="im15" src="images/levatorlabiisup.png">
-                <img class="im16" src="images/levatorlabiialae.png">
-                <img class="im17" src="images/procerus.png">
-                <img class="im18" src="images/corrugatorsuper.png">
-                <img class="im19" src="images/orbicularisoculi.png">
-                <img class="im20" src="images/orbicularesoris.png">
-                <img class="im21 pijl" src="images/Buccinator.gif">
-                <img class="im22 pijl" src="images/levatorangulioris.gif">
-                <img class="im23 pijl" src="images/zygomalicusminor.gif">
-                <img class="im24 pijl" src="images/zygomalicusmajor.gif">
-                <img class="im25 pijl" src="images/Platysma.gif">
-                <img class="im26 pijl" src="images/risorius.gif">
-                <img class="im27 pijl" src="images/nasalistransversa.gif">
-                <img class="im28 pijl" src="images/nasalisalaris.gif">
-                <img class="im29 pijl" src="images/frontalis.gif">
-                <img class="im30 pijl" src="images/mentalis.gif">
-                <img class="im31 pijl" src="images/depressorlabiiinferioris.gif">
-                <img class="im32 pijl" src="images/depressorangulioris.gif">
-                <img class="im33 pijl" src="images/levatorlabiisuperioris.gif">
-                <img class="im34 pijl" src="images/levatorlabiialaeque.gif">
-                <img class="im35 pijl" src="images/procerus.gif">
-                <img class="im36 pijl" src="images/corrugator.gif">
-                <img class="im37 pijl" src="images/orbicularisoculi.gif">
-                <img class="im38 pijl" src="images/orbicularesoris.gif">
-                <img class="im40" src="images/haar.png">
-                <img class="im42" src="images/zenuwen.png">
-            </figure>
-            <div class="tekst buccinator">
-                <h2>M. Buccinator</h2>
-                <p>Zorgt voor spanning in de wang, drukt de wang tegen de tanden; trekt de mondhoek lichtjes naar opzij.</p>
-            </div>
-            <div class="tekst levatoranguli">
-                <h2>M. Levator Anguli Oris</h2>
-                <p>Trekt de mondhoek naar boven; vormt mee de neus-lipplooi. </p>
-            </div>
-            <div class="tekst zygomalicusminor">
-                <h2>M. Zygomaticus Minor</h2>
-                <p>Trekt de bovenlip naar opzij en omhoog
-                    (= glimlach).
-                </p>
-            </div>
-            <div class="tekst zygomalicusmajor">
-                <h2>M. Zygomaticus Major</h2>
-                <p>Trekt de mondhoek naar opzij en omhoog
-                    (= glimlach).
-                </p>
-            </div>
-
-            <div class="tekst platysma2">
-                <h2>M. Platysma</h2>
-                <p>Trekt onderlip en mondhoek naar beneden. Vormt bij samentrekken plooien in de hals. </p>
-            </div>
-            <div class="tekst risorius">
-                <h2>M. Risorius</h2>
-                <p>Trekt de mondhoek naar opzij.</p>
-            </div>
-            <div class="tekst nasalistransvera">
-                <h2>M. Nasalis Pars Transversa</h2>
-                <p>Drukt de neusopening dicht.</p>
-            </div>
-            <div class="tekst nasalisalaris">
-                <h2>M. Nasalis Pars Alaris</h2>
-                <p>Trekt de neusvleugel open; opent het neusgat.</p>
-            </div>
-            <div class="tekst frontalis">
-                <h2>M. Frontalis</h2>
-                <p>Trekt de wenkbrauw en het voorhoofd op.
-                    Vormt bij samentrekken rimpels op het voorhoofd.
-                </p>
-            </div>
-            <div class="tekst mentalis">
-                <h2>M. Mentalis</h2>
-                <p>Beweegt de onderlip naar boven en naar voor (=pruillip); vormt bij samentrekken kuiltjes in de kin. </p>
-            </div>
-            <div class="tekst depressorlabii">
-                <h2>M. Depressor Labii Inferioris</h2>
-                <p>Trekt de onderlip naar beneden en opzij.</p>
-            </div>
-            <div class="tekst depresooranguli">
-                <h2>M. Depressor Anguli Oris</h2>
-                <p>Trekt de mondhoek naar beneden en opzij.</p>
-            </div>
-            <div class="tekst levatorlabiisup">
-                <h2>M. Levator Labii Superioris</h2>
-                <p>Trekt de bovenlip naar boven; vormt mee de neus-lipplooi.</p>
-            </div>
-            <div class="tekst levatorlabiialae">
-                <h2>M. Levator Labii Alaeque</h2>
-                <p>Trekt de bovenlip en neusvleugels naar boven; verruimt de neusopening.</p>
-            </div>
-            <div class="tekst procerus">
-                <h2>M. Procerus</h2>
-                <p>Trekt de binnenzijde van de wenkbrauw naar beneden (= fronsen). </p>
-            </div>
-            <div class="tekst corrugator">
-                <h2>M. Corrugator Supercillii</h2>
-                <p>Trekt het middendeel van de wenkbrauw naar het midden en naar beneden toe
-                    (= fronsen).
-                </p>
-            </div>
-            <div class="tekst orbicularisoculi">
-                <h2>M. Orbicularis Oculi</h2>
-                <p>Sluit het oog; opent het traanzakje</p>
-            </div>
-            <div class="tekst orbicularisoris">
-                <h2>M. Orbicularis Oris</h2>
-                <p>Sluit de lippen; beweegt de boven- en onderlip naar voor (= tuiten).</p>
-            </div>
-            
+    <body>
+        <div class="header">
+            <p class="copy">&copy; Copyright Arteveldehogeschool 2022</p>
+            <a href="bronnen.html" target="_blank">Bronnen</a>
+            <img src="images/artevelde.png">
         </div>
-        
-    </div>
-    
-    <script src="js/main.js"></script>
-</body>
+        <div class="sechead">
+            <button onclick="shownavigation()" class="shownav">Selecteer een spier</button>
+            <button onclick="showimage()" class="showim">bekijk afbeelding</button>
+            <button onclick="toggleoff(this)" class="deskonly">Deselecteer alles</button>
+            <button onclick="shownerve()" class="deskonly">Zenuwen aan/uit</button>
+            <a href="files/anatomiegezicht.pdf" download="Anatomiegezicht.pdf" class="download">PDF downloaden</a>
+        </div>
+        <div class="wrapper">
+
+            <input type="checkbox" id="orbicularisoculi" value="orbicularisoculi">
+            <label class="fig" for="orbicularisoculi">
+                <img src="images/Versie_6.png">
+                <img src="images/orbicularisoculi.png">
+                <p>M.&nbsp;Orbicularis Oculi</p>
+            </label>
+
+            <input type="checkbox" id="corrugator" value="corrugator">
+            <label class="fig" for="corrugator">
+                <img src="images/Versie_6.png">
+                <img src="images/corrugatorsuper.png">
+                <p>M.&nbsp;Corrugator Supercillii</p>
+            </label>
+
+            <input type="checkbox" id="nasalistransvera" value="nasalistransvera">
+            <label class="fig" for="nasalistransvera">
+                <img src="images/Versie_6.png">
+                <img src="images/nasalistransversa.png">
+                <p>M.&nbsp;Nasalis&nbsp;Pars Transversa</p>
+            </label>
+
+            <input type="checkbox" id="nasalisalaris" value="nasalisalaris">
+            <label class="fig" for="nasalisalaris">
+                <img src="images/Versie_6.png">
+                <img src="images/nasalisalaris.png">
+                <p>M.&nbsp;Nasalis&nbsp;Pars Alaris</p>
+            </label>
+
+            <input type="checkbox" id="procerus" value="procerus">
+            <label class="fig" for="procerus">
+                <img src="images/Versie_6.png">
+                <img src="images/procerus.png">
+                <p>M.&nbsp;Procerus</p>
+            </label>
+
+            <input type="checkbox" id="depresooranguli" value="depresooranguli">
+            <label class="fig" for="depresooranguli">
+                <img src="images/Versie_6.png">
+                <img src="images/depressoranguli.png">
+                <p>M.&nbsp;Depressor&nbsp;Anguli Oris</p>
+            </label>
+
+            <input type="checkbox" id="depressorlabii" value="depressorlabii">
+            <label class="fig" for="depressorlabii">
+                <img src="images/Versie_6.png">
+                <img src="images/depressorlabii.png">
+                <p>M.&nbsp;Depressor&nbsp;Labii Inferioris</p>
+            </label>
+
+            <input type="checkbox" id="mentalis" value="mentalis">
+            <label class="fig" for="mentalis">
+                <img src="images/Versie_6.png">
+                <img src="images/mentalis.png">
+                <p>M.&nbsp;Mentalis</p>
+            </label>
+
+            <input type="checkbox" id="risorius" value="risorius">
+            <label class="fig" for="risorius">
+                <img src="images/Versie_6.png">
+                <img src="images/risorius.png">
+                <p>M.&nbsp;Risorius</p>
+            </label>
+
+            <input type="checkbox" id="zygomalicusmajor" value="zygomalicusmajor">
+            <label class="fig" for="zygomalicusmajor">
+                <img src="images/Versie_6.png">
+                <img src="images/zygomalicusmajor.png">
+                <p>M.&nbsp;Zygomaticus Major</p>
+            </label>
+
+            <input type="checkbox" id="zygomalicusminor" value="zygomalicusminor">
+            <label class="fig" for="zygomalicusminor">
+                <img src="images/Versie_6.png">
+                <img src="images/zygomalicus.png">
+                <p>M.&nbsp;Zygomaticus Minor</p>
+            </label>
+
+            <input type="checkbox" id="levatorlabiisup" value="levatorlabiisup">
+            <label class="fig" for="levatorlabiisup">
+                <img src="images/Versie_6.png">
+                <img src="images/levatorlabiisup.png">
+                <p>M.&nbsp;Levator&nbsp;Labii Superioris</p>
+            </label>
+
+
+            <input type="checkbox" id="levatorlabiialae" value="levatorlabiialae">
+            <label class="fig" for="levatorlabiialae">
+                <img src="images/Versie_6.png">
+                <img src="images/levatorlabiialae.png">
+                <p>M.&nbsp;Levator&nbsp;Labii Alaeque</p>
+            </label>
+
+            <input type="checkbox" id="levatoranguli" value="levatoranguli">
+            <label class="fig" for="levatoranguli">
+                <img src="images/Versie_6.png">
+                <img src="images/levatorangulioris.png">
+                <p>M.&nbsp;Levator&nbsp;Anguli Oris</p>
+            </label>
+
+            <input type="checkbox" id="orbicularisoris" value="orbicularisoris">
+            <label class="fig" for="orbicularisoris">
+                <img src="images/Versie_6.png">
+                <img src="images/orbicularesoris.png">
+                <p>M.&nbsp;Orbicularis Oris</p>
+            </label>
+
+            <input type="checkbox" id="buccinator" value="buccinator">
+            <label class="fig" for="buccinator">
+                <img src="images/Versie_6.png">
+                <img src="images/buccinator.png">
+                <p>M.&nbsp;Buccinator</p>
+            </label>
+
+            <input type="checkbox" id="frontalis" value="frontalis">
+            <label class="fig" for="frontalis">
+                <img src="images/Versie_6.png">
+                <img src="images/frontalis.png">
+                <p>M.&nbsp;Frontalis</p>
+            </label>
+
+            <input type="checkbox" id="platysma2" value="platysma2">
+            <label class="fig" for="platysma2">
+                <img src="images/Versie_6.png">
+                <img src="images/platysma2.png">
+                <p>M.&nbsp;Platysma</p>
+            </label>
+
+
+
+            <div id="middle" class="clearfix">
+                <figure>
+                    <img class="im1" src="images/Versie_6.png">
+                    <img class="im2" src="images/buccinator.png">
+                    <img class="im3" src="images/levatorangulioris.png">
+                    <img class="im4" src="images/zygomalicus.png">
+                    <img class="im5" src="images/zygomalicusmajor.png">
+                    <img class="im7" src="images/platysma2.png">
+                    <img class="im8" src="images/risorius.png">
+                    <img class="im9" src="images/nasalistransversa.png">
+                    <img class="im10" src="images/nasalisalaris.png">
+                    <img class="im11" src="images/frontalis.png">
+                    <img class="im12" src="images/mentalis.png">
+                    <img class="im13" src="images/depressorlabii.png">
+                    <img class="im14" src="images/depressoranguli.png">
+                    <img class="im15" src="images/levatorlabiisup.png">
+                    <img class="im16" src="images/levatorlabiialae.png">
+                    <img class="im17" src="images/procerus.png">
+                    <img class="im18" src="images/corrugatorsuper.png">
+                    <img class="im19" src="images/orbicularisoculi.png">
+                    <img class="im20" src="images/orbicularesoris.png">
+                    <img class="im21 pijl" src="images/Buccinator.gif">
+                    <img class="im22 pijl" src="images/levatorangulioris.gif">
+                    <img class="im23 pijl" src="images/zygomalicusminor.gif">
+                    <img class="im24 pijl" src="images/zygomalicusmajor.gif">
+                    <img class="im25 pijl" src="images/Platysma.gif">
+                    <img class="im26 pijl" src="images/risorius.gif">
+                    <img class="im27 pijl" src="images/nasalistransversa.gif">
+                    <img class="im28 pijl" src="images/nasalisalaris.gif">
+                    <img class="im29 pijl" src="images/frontalis.gif">
+                    <img class="im30 pijl" src="images/mentalis.gif">
+                    <img class="im31 pijl" src="images/depressorlabiiinferioris.gif">
+                    <img class="im32 pijl" src="images/depressorangulioris.gif">
+                    <img class="im33 pijl" src="images/levatorlabiisuperioris.gif">
+                    <img class="im34 pijl" src="images/levatorlabiialaeque.gif">
+                    <img class="im35 pijl" src="images/procerus.gif">
+                    <img class="im36 pijl" src="images/corrugator.gif">
+                    <img class="im37 pijl" src="images/orbicularisoculi.gif">
+                    <img class="im38 pijl" src="images/orbicularesoris.gif">
+                    <img class="im40" src="images/haar.png">
+                    <img class="im42" src="images/zenuwen.png">
+                </figure>
+                <div class="tekst buccinator">
+                    <h2>M. Buccinator</h2>
+                    <p>Zorgt voor spanning in de wang, drukt de wang tegen de tanden; trekt de mondhoek lichtjes naar opzij.</p>
+                </div>
+                <div class="tekst levatoranguli">
+                    <h2>M. Levator Anguli Oris</h2>
+                    <p>Trekt de mondhoek naar boven; vormt mee de neus-lipplooi. </p>
+                </div>
+                <div class="tekst zygomalicusminor">
+                    <h2>M. Zygomaticus Minor</h2>
+                    <p>Trekt de bovenlip naar opzij en omhoog
+                        (= glimlach).
+                    </p>
+                </div>
+                <div class="tekst zygomalicusmajor">
+                    <h2>M. Zygomaticus Major</h2>
+                    <p>Trekt de mondhoek naar opzij en omhoog
+                        (= glimlach).
+                    </p>
+                </div>
+
+                <div class="tekst platysma2">
+                    <h2>M. Platysma</h2>
+                    <p>Trekt onderlip en mondhoek naar beneden. Vormt bij samentrekken plooien in de hals. </p>
+                </div>
+                <div class="tekst risorius">
+                    <h2>M. Risorius</h2>
+                    <p>Trekt de mondhoek naar opzij.</p>
+                </div>
+                <div class="tekst nasalistransvera">
+                    <h2>M. Nasalis Pars Transversa</h2>
+                    <p>Drukt de neusopening dicht.</p>
+                </div>
+                <div class="tekst nasalisalaris">
+                    <h2>M. Nasalis Pars Alaris</h2>
+                    <p>Trekt de neusvleugel open; opent het neusgat.</p>
+                </div>
+                <div class="tekst frontalis">
+                    <h2>M. Frontalis</h2>
+                    <p>Trekt de wenkbrauw en het voorhoofd op.
+                        Vormt bij samentrekken rimpels op het voorhoofd.
+                    </p>
+                </div>
+                <div class="tekst mentalis">
+                    <h2>M. Mentalis</h2>
+                    <p>Beweegt de onderlip naar boven en naar voor (=pruillip); vormt bij samentrekken kuiltjes in de kin. </p>
+                </div>
+                <div class="tekst depressorlabii">
+                    <h2>M. Depressor Labii Inferioris</h2>
+                    <p>Trekt de onderlip naar beneden en opzij.</p>
+                </div>
+                <div class="tekst depresooranguli">
+                    <h2>M. Depressor Anguli Oris</h2>
+                    <p>Trekt de mondhoek naar beneden en opzij.</p>
+                </div>
+                <div class="tekst levatorlabiisup">
+                    <h2>M. Levator Labii Superioris</h2>
+                    <p>Trekt de bovenlip naar boven; vormt mee de neus-lipplooi.</p>
+                </div>
+                <div class="tekst levatorlabiialae">
+                    <h2>M. Levator Labii Alaeque</h2>
+                    <p>Trekt de bovenlip en neusvleugels naar boven; verruimt de neusopening.</p>
+                </div>
+                <div class="tekst procerus">
+                    <h2>M. Procerus</h2>
+                    <p>Trekt de binnenzijde van de wenkbrauw naar beneden (= fronsen). </p>
+                </div>
+                <div class="tekst corrugator">
+                    <h2>M. Corrugator Supercillii</h2>
+                    <p>Trekt het middendeel van de wenkbrauw naar het midden en naar beneden toe
+                        (= fronsen).
+                    </p>
+                </div>
+                <div class="tekst orbicularisoculi">
+                    <h2>M. Orbicularis Oculi</h2>
+                    <p>Sluit het oog; opent het traanzakje</p>
+                </div>
+                <div class="tekst orbicularisoris">
+                    <h2>M. Orbicularis Oris</h2>
+                    <p>Sluit de lippen; beweegt de boven- en onderlip naar voor (= tuiten).</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="js/main.js"></script>
+    </body>
 
 </html>

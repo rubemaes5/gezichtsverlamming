@@ -84,6 +84,9 @@ label {
     padding-right: 15px;
     margin-top: -58px
 }
+.copy{
+    width: 110%;
+}
 
 label img {
     transition: all 0.2s ease;
